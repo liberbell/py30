@@ -11,4 +11,4 @@ client, address = s.accept()
 print("Connection to ", address, "established.\n")
 print("Client object: ", client, "\n")
 
-client.send(bytes("Hello! Welcome to socket programing.", "utf-8"))
+client.send(bytes("Hello! Welcome to socket programming.", "utf-8"))
