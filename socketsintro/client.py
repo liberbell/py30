@@ -6,4 +6,3 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
     msg = s.recv(1024)
     print("Message from server: ", msg.decode("utf-8"))
-    s.close()
