@@ -3,6 +3,7 @@ import socket
 # s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind(('127.0.0.1',4571))
+    s.settimeout(10)
     s.listen(5)
 
     print("Server is up. Listening for connections....")
