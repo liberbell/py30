@@ -12,4 +12,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
     client, address = s.accept()
     print("Connection to ", address, "established\n")
-    
+    print("Client object ", client, "\n")
