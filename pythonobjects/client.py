@@ -9,3 +9,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
         if not msg:
             print("No meesage from server. Closing the connection...")
+            break
