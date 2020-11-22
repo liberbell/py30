@@ -1,5 +1,6 @@
 import socket
 from product import Product
+import pickle
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect(("localhost", 4571))
@@ -11,5 +12,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             print("No meesage from server. Closing the connection...")
             break
 
-        print("Message from serer: ", msg.decode("utf-8"))
+        # print("Message from serer: ", msg.decode("utf-8"))
         print("Type of recieved message:", type(msg))
+        print("Message_data: ", msg)
+
+        unpickled_message = pickle.loads(msg)
+        print(unpickled_message)
