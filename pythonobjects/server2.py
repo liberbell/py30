@@ -4,7 +4,7 @@ import pickle
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
-	s.bind((socket.gethostname(),4571))
+	s.bind(("localhost",4571))
 
 	python_dictionary = {'a': 1, 'b': 2}
 	pickled_dictionary = pickle.dumps(python_dictionary)
