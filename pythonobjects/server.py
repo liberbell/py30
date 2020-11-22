@@ -14,5 +14,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print("Connection to ", address, "established\n")
     print("Client object ", client, "\n")
 
-    client.send(bytes(str(python_dictionary), "utf-8"))
+    client.send(python_dictionary))
     client.send(bytes(str(custom_product), "utf-8"))
