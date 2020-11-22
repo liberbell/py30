@@ -15,4 +15,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print("Client object ", client, "\n")
 
     client.send(python_dictionary)
-    client.send(bytes(str(custom_product), "utf-8"))
+    client.send(custom_product)
