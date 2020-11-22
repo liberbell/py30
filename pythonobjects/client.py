@@ -17,4 +17,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         print("Message_data: ", msg)
 
         unpickled_message = pickle.loads(msg)
-        print(unpickled_message)
+
+        print("Type of deserialized message: ", type(unpickled_message))
+        print("Desiliarized message: ", unpickled_message)
