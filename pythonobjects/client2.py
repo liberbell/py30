@@ -4,7 +4,7 @@ import pickle
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 	
-	s.connect((socket.gethostname(), 4571))
+	s.connect(("localhost", 4571))
 
 	while True:
 		
