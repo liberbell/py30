@@ -7,7 +7,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
     python_dictionary = {"a": 1, "b": 2}
     pickled_dictionary = pickle.dumps(python_dictionary)
+
     custom_product = Product("P024", "Torch", 13)
+    pickled_product = pickle.dumps(custom_product)
 
     s.listen(5)
     print("Server is up. Listening for connections...")
