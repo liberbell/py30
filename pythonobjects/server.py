@@ -19,4 +19,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print("Client object ", client, "\n")
 
     client.send(pickled_dictionary)
-    client.send(custom_product)
+    client.send(pickled_product)
