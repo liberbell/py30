@@ -15,7 +15,10 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 		# print('Type of received message:', type(msg))
 		# print('Message data:', msg)
 
-		unpickled_msg = pickle.loads(msg)
+		# unpickled_msg = pickle.loads(msg)
+        procuct_object = pickle.loads(msg)
 
-		print('Type of deserialized message:', type(unpickled_msg))
-		print('Deserialized data:', unpickled_msg)
+		# print('Type of deserialized message:', type(unpickled_msg))
+		# print('Deserialized data:', unpickled_msg)
+
+        print("Product ID: ", procuct_object.pid)
