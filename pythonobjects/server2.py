@@ -29,4 +29,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 		pickle_product = pickle.dumps(product)
 		client.send(pickle_product)
 
-	s.close()
+		print("Sent product: ", product.pid)
+
+		time.sleep("")
+
+	# s.close()
