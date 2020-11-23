@@ -15,3 +15,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         product_object = pickle.loads(msg)
         
         print("Product ID: ", product_object.pid)
+        print("Product Nmae: ", product_object.pname)
+        print("Product Price:", product_object.pprice)
