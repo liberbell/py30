@@ -28,3 +28,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 	for product in custom_object:
 		pickle_product = pickle.dumps(product)
 		client.send(pickle_product)
+
+	s.close()
