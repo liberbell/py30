@@ -12,3 +12,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             print("No message from the server. Closing the connection...")
 
         product_object = pickle.loads(msg)
+        
+        print("Product ID: ", product_object.pid)
