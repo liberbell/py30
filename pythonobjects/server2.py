@@ -6,14 +6,14 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 	s.bind(("localhost",4571))
 
-	python_dictionary = {'a': 1, 'b': 2}
-	pickled_dictionary = pickle.dumps(python_dictionary)
+	# python_dictionary = {'a': 1, 'b': 2}
+	# pickled_dictionary = pickle.dumps(python_dictionary)
 
 	custom_object = Product('P024', 'Torch', 13)
 	pickled_object = pickle.dumps(custom_object)
 
-	print('Serialized dictionary type:', type(pickled_dictionary))
-	print('Serialized object type:', type(pickled_object))
+	# print('Serialized dictionary type:', type(pickled_dictionary))
+	# print('Serialized object type:', type(pickled_object))
 
 	s.listen(5)
 
