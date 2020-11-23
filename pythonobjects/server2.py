@@ -8,6 +8,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 	custom_object = Product('P024', 'Torch', 13)
 	pickled_object = pickle.dumps(custom_object)
+	pickled_object2 = pickle.dumps(custom_object)
 
 	s.listen(5)
 
@@ -17,4 +18,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 	print('Connection to', address, 'established\n')
 	print('Client object:', client, '\n')
 
-	client.send(pickled_object)
+	client.send(pickled_object2)
