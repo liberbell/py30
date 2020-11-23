@@ -1,12 +1,19 @@
 import socket
 from product import Product
 import pickle
+import time
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 	s.bind(("localhost",4571))
 
-	custom_object = Product('P024', 'Torch', 13)
+	custom_object = [Product('P024', 'Torch', 13),
+	                 Product('P025', 'Waterbottle', 5),
+					 Product('P026', 'Keyboard', 20),
+					 Product('P027', 'Mouse', 15),
+					 Product('P028', 'USBcable', 2)]
+
+
 	pickled_object = pickle.dumps(custom_object)
 	pickled_object2 = pickle.dumps(custom_object)
 
