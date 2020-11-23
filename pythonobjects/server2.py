@@ -31,6 +31,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 		print("Sent product: ", product.pid)
 
-		time.sleep("")
+		time.sleep(2)
 
 	# s.close()
