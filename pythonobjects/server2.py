@@ -14,8 +14,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 					 Product('P028', 'USBcable', 2)]
 
 
-	pickled_object = pickle.dumps(custom_object)
-	pickled_object2 = pickle.dumps(custom_object)
+	# pickled_object = pickle.dumps(custom_object)
+	# pickled_object2 = pickle.dumps(custom_object)
 
 	s.listen(5)
 
