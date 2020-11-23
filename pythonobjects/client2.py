@@ -12,8 +12,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 			print('No messages from the server. Closing the connection...')
 			break
 
-		print('Type of received message:', type(msg))
-		print('Message data:', msg)
+		# print('Type of received message:', type(msg))
+		# print('Message data:', msg)
 
 		unpickled_msg = pickle.loads(msg)
 
